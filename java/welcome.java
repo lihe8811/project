@@ -5,6 +5,6 @@
 
 public class welcome{
 	public static void main(String[] args){
-		System.out.println("This is my first Java program!");
+		System.out.printf("%s","This is my first Java program!");
 	}
 }
