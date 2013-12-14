@@ -1,10 +1,21 @@
-// Java program for learning
-// Author: He LI
-// Date: 2013-11-07
-// Version: 1.0
+/**
+ * welcome.java
+ * 
+ * Created on Nov 7, 2013, 12:00 PM
+ * 
+ * Copyright (c) 2013 He Li.
+ *
+ * Java program for learning
+ */
+
+
 import java.util.Scanner;
 
-public class welcome{
+/**
+ * This class is designed for learning java.
+ * @author He Li
+ */
+public class welcome {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 		int number1, number2;
