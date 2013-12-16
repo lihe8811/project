@@ -10,6 +10,7 @@
 
 
 import java.util.Scanner;
+import java.util.Random;
 
 /**
  * This class is designed for learning java.
@@ -17,17 +18,16 @@ import java.util.Scanner;
  */
 public class WelcomeTest {	
 	public static void main(String[] args) {
+		final int BIAS = 1, SEED = 2000;
+		int face;
+		
 		Welcome name = new Welcome("lihe8811");
-		
-		Scanner input = new Scanner(System.in);
-		int number1, number2;
-		System.out.printf("Enter first integer:\n");
-		number1 = input.nextInt();
-		
-		System.out.printf("Enter second integer:\n");
-		number2 = input.nextInt();
+		Random randomNumber = new Random();
 		
 		System.out.printf("Solution completed by %s.\n", name.getUserName());
-		System.out.printf("Sum of two integer is %d.\n", (number1 + number2));
+		for (int it = 0; it < 10; it++){
+			face = randomNumber.nextInt(6) + BIAS;
+			System.out.printf("Face of the dice is %d.\n", face);
+		}
 	}
 }

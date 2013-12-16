@@ -15,16 +15,14 @@ import java.util.Scanner;
  * This class is designed for learning java.
  * @author He Li
  */
-public class welcome {
-	public static void main(String[] args){
-		Scanner input = new Scanner(System.in);
-		int number1, number2;
-		System.out.printf("Enter first integer:\n");
-		number1 = input.nextInt();
-		
-		System.out.printf("Enter second integer:\n");
-		number2 = input.nextInt();
-		
-		System.out.printf("Sum of two integer is %d.\n", (number1 + number2));
+public class Welcome {
+	private String user;
+	
+	public Welcome(String userName) {
+		user = userName;
+	}
+	
+	public String getUserName() {
+		return user;
 	}
 }
