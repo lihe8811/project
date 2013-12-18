@@ -15,12 +15,12 @@ import java.util.Arrays;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int[] array = {2, 5, 6, 9, 8, 7, 5, 8, 2, 6, 9};
-		SingleNumber solution = new SingleNumber();
+		int[] input = {2849, 395, -19839, -434, 22};
+		ReverseInteger solution = new ReverseInteger();
 		
-		System.out.printf("The input array is:\n");
-		System.out.println(Arrays.toString(array));
-		
-		System.out.printf("The only single integer is %d.\n", solution.singleNumber(array));
+		for (int it = 0; it < input.length; it++) {
+			System.out.printf("The input number is: %d\n", input);
+			System.out.printf("The reversed number is %d.\n", solution.reverseInteger(input));
+		}
 	}
 }

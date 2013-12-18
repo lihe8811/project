@@ -26,7 +26,7 @@ public class SingleNumber {
 			* a ^ a = 0, 0 ^ a = a
 			* result will be the only single integer in array.
 			*/
-		for(int it = 0; it < array.length; it++){
+		for (int it = 0; it < array.length; it++) {
 			single = single ^ array[it];
 		}
 		return single;
