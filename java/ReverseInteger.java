@@ -21,9 +21,27 @@
  */
 public class ReverseInteger {
 	public int reverseInteger(int input) {
-		int digit = (int) Math.log10((double) Math.abs(input)) + 1;
+		int abs = Math.abs(input);
+		int digit = (int) Math.log10(abs) + 1;
+		int reverse = 0, residue;
 		
+		/**
+			* Split each digit from end of integer, and reverse.
+			*/
+		for (int it = 0; it < digit; it++) {
+			residue = abs % 10;
+			abs = abs / 10;
+			reverse += residue * Math.pow(10, digit - 1 - it);
+		}
 		
-		return digit;
+		/**
+			* Handle negative input. When reversed integer overflows, 
+			* Integer.MAX_VALUE will be returned.
+			*/
+		if (input < 0) {
+			reverse = -reverse;
+		}
+		
+		return reverse;
 	}
 }

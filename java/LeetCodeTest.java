@@ -15,12 +15,10 @@ import java.util.Arrays;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int[] input = {2849, 395, -19839, -434, 22};
+		int input = 1000000003;
 		ReverseInteger solution = new ReverseInteger();
 		
-		for (int it = 0; it < input.length; it++) {
-			System.out.printf("The input number is: %d\n", input);
-			System.out.printf("The reversed number is %d.\n", solution.reverseInteger(input));
-		}
+		System.out.printf("The input number is: %d\n", input);
+		System.out.printf("The reversed number is %d.\n", solution.reverseInteger(input));
 	}
 }
