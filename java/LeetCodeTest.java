@@ -15,10 +15,10 @@ import java.util.Arrays;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int input = 1000000003;
-		ReverseInteger solution = new ReverseInteger();
+		int input = -2147447412;
+		PalindromeNumber solution = new PalindromeNumber();
 		
 		System.out.printf("The input number is: %d\n", input);
-		System.out.printf("The reversed number is %d.\n", solution.reverseInteger(input));
+		System.out.printf("The input number is palindrome? %b.\n\n", solution.palindromeNumber(input));	
 	}
 }
