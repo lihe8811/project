@@ -15,10 +15,11 @@ import java.util.Arrays;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int input = -2147447412;
-		PalindromeNumber solution = new PalindromeNumber();
+		int[] input = {72, 198, 1000, 250};
+		Sqrt solution = new Sqrt();
 		
-		System.out.printf("The input number is: %d\n", input);
-		System.out.printf("The input number is palindrome? %b.\n\n", solution.palindromeNumber(input));	
+		for (int it = 0; it < input.length; it++) {
+			System.out.printf("The square root of %d is: %d\n", input[it], solution.sqrt(input[it]));		
+		}
 	}
 }
