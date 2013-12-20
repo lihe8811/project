@@ -11,15 +11,11 @@
  * @author He Li
  */
 
-import java.util.Arrays;
-
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int[] input = {72, 198, 1000, 250};
-		Sqrt solution = new Sqrt();
+		String input = "wlrbbmqbhcdarzowkkyhiddqscdxrjmowfrxsjybldbefsarcbynecdyggxxpklorellnmpapqfwkhopkmco";
+		LongestSubstringWithoutRepeatingChar solution = new LongestSubstringWithoutRepeatingChar();
 		
-		for (int it = 0; it < input.length; it++) {
-			System.out.printf("The square root of %d is: %d\n", input[it], solution.sqrt(input[it]));		
-		}
+		System.out.printf("Length of longest substring without repeating character in %s is: %d\n", input, solution.lengthOfLongestSubstring(input));
 	}
 }
