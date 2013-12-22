@@ -13,9 +13,9 @@
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		String input = "wlrbbmqbhcdarzowkkyhiddqscdxrjmowfrxsjybldbefsarcbynecdyggxxpklorellnmpapqfwkhopkmco";
-		LongestSubstringWithoutRepeatingChar solution = new LongestSubstringWithoutRepeatingChar();
+		int dividend = -1021989372, divisor = -82778243;
+		DivideInteger solution = new DivideInteger();
 		
-		System.out.printf("Length of longest substring without repeating character in %s is: %d\n", input, solution.lengthOfLongestSubstring(input));
+		System.out.printf("%d/%d = %d ~ %d\n", dividend, divisor, solution.divideInteger(dividend, divisor),  dividend / divisor);
 	}
 }
