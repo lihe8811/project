@@ -60,18 +60,20 @@ public class ThreeSum {
 						*/
 					if (hash.containsKey(expect) == true) {
 						key = hash.get(expect);
-						/**
-							* Order three elements and check duplicate.
-							*/
-						min = Math.min(Math.min(array[it], array[jt]), expect);
-						max = Math.max(Math.max(array[it], array[jt]), expect);
-						mid = - (min + max);
+						if (key != it && key != jt) {
+							/**
+								* Order three elements and check duplicate.
+								*/
+							min = Math.min(Math.min(array[it], array[jt]), expect);
+							max = Math.max(Math.max(array[it], array[jt]), expect);
+							mid = - (min + max);
 						
-						ArrayList<Integer> element = new ArrayList<Integer>();
-						element.addAll(Arrays.asList(min, mid, max));
-						if (dedup.contains(element) == false) {
-							dedup.add(element);
-							result.add(element);
+							ArrayList<Integer> element = new ArrayList<Integer>();
+							element.addAll(Arrays.asList(min, mid, max));
+							if (dedup.contains(element) == false) {
+								dedup.add(element);
+								result.add(element);
+							}	
 						}
 					}
 				}

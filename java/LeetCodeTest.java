@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int[] array = {-1, 0, 1, 2, -1, -4};
+		int[] array = {1,2,-2,-1};
 		ThreeSum solution = new ThreeSum();
 		ArrayList<ArrayList<Integer>> result = solution.threeSum(array);
 		
