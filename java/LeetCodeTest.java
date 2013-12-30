@@ -15,12 +15,9 @@ import java.util.ArrayList;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int[] array = {1,2,-2,-1};
-		ThreeSum solution = new ThreeSum();
-		ArrayList<ArrayList<Integer>> result = solution.threeSum(array);
+		int[] array = {0};
+		SortColors solution = new SortColors();
 		
-		for (int it = 0; it < result.size(); it++) {
-			System.out.printf("(%d, %d, %d)\n", result.get(it).get(0), result.get(it).get(1), result.get(it).get(2));
-		}
+		solution.sortColors(array);
 	}
 }
