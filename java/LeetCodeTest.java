@@ -15,9 +15,9 @@ import java.util.ArrayList;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int[] array = {0};
-		SortColors solution = new SortColors();
+		int row = 0;
+		PascalTriangle solution = new PascalTriangle();
 		
-		solution.sortColors(array);
+		solution.pascalTriangle(row);
 	}
 }
