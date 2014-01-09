@@ -15,9 +15,9 @@ import java.util.ArrayList;
 
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int row = 0;
-		PascalTriangle solution = new PascalTriangle();
+		int row = 2;
+		PascalTriangle2 solution = new PascalTriangle2();
 		
-		solution.pascalTriangle(row);
+		solution.pascalTriangle2(row);
 	}
 }
