@@ -11,13 +11,11 @@
  * @author He Li
  */
 
-import java.util.ArrayList;
-
 public class LeetCodeTest {	
 	public static void main(String[] args) {
-		int row = 2;
-		PascalTriangle2 solution = new PascalTriangle2();
+		int[] input = {2, 3, 9, 5, 3, 0, 1, 4, 6};
+		StockOne solution = new StockOne();
 		
-		solution.pascalTriangle2(row);
+		System.out.printf("%d\n", solution.stockOne(input));
 	}
 }
