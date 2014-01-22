@@ -14,8 +14,8 @@
 public class LeetCodeTest {	
 	public static void main(String[] args) {
 		int[] input = {2, 3, 9, 5, 3, 0, 1, 4, 6};
-		StockOne solution = new StockOne();
+		StockTwo solution = new StockTwo();
 		
-		System.out.printf("%d\n", solution.stockOne(input));
+		System.out.printf("%d\n", solution.stockTwo(input));
 	}
 }
