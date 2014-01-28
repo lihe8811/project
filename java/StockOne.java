@@ -1,7 +1,7 @@
 /**
- * DivideInteger.java
+ * StockOne.java
  * 
- * Created on Dec 21, 2013, 13:05 PM
+ * Created on Jan 15, 2013, 13:05 PM
  * 
  * Copyright (c) 2013 He Li.
  *

@@ -1,5 +1,5 @@
 /**
- * DivideInteger.java
+ * StockTwo.java
  * 
  * Created on Dec 21, 2013, 13:05 PM
  * 
