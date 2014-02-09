@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4889B2AF18A7FBA200909D1F"
-               BuildableName = "HelloWorld.app"
-               BlueprintName = "HelloWorld"
-               ReferencedContainer = "container:HelloWorld.xcodeproj">
+               BlueprintIdentifier = "4899A51E18A7FD9C009ED1C4"
+               BuildableName = "helloworld.app"
+               BlueprintName = "helloworld"
+               ReferencedContainer = "container:helloworld.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4889B2D018A7FBA300909D1F"
-               BuildableName = "HelloWorldTests.xctest"
-               BlueprintName = "HelloWorldTests"
-               ReferencedContainer = "container:HelloWorld.xcodeproj">
+               BlueprintIdentifier = "4899A53918A7FD9C009ED1C4"
+               BuildableName = "helloworldTests.xctest"
+               BlueprintName = "helloworldTests"
+               ReferencedContainer = "container:helloworld.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4889B2AF18A7FBA200909D1F"
-            BuildableName = "HelloWorld.app"
-            BlueprintName = "HelloWorld"
-            ReferencedContainer = "container:HelloWorld.xcodeproj">
+            BlueprintIdentifier = "4899A51E18A7FD9C009ED1C4"
+            BuildableName = "helloworld.app"
+            BlueprintName = "helloworld"
+            ReferencedContainer = "container:helloworld.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4889B2AF18A7FBA200909D1F"
-            BuildableName = "HelloWorld.app"
-            BlueprintName = "HelloWorld"
-            ReferencedContainer = "container:HelloWorld.xcodeproj">
+            BlueprintIdentifier = "4899A51E18A7FD9C009ED1C4"
+            BuildableName = "helloworld.app"
+            BlueprintName = "helloworld"
+            ReferencedContainer = "container:helloworld.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4889B2AF18A7FBA200909D1F"
-            BuildableName = "HelloWorld.app"
-            BlueprintName = "HelloWorld"
-            ReferencedContainer = "container:HelloWorld.xcodeproj">
+            BlueprintIdentifier = "4899A51E18A7FD9C009ED1C4"
+            BuildableName = "helloworld.app"
+            BlueprintName = "helloworld"
+            ReferencedContainer = "container:helloworld.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

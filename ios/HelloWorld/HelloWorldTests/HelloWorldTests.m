@@ -1,6 +1,6 @@
 //
-//  HelloWorldTests.m
-//  HelloWorldTests
+//  helloworldTests.m
+//  helloworldTests
 //
 //  Created by He Li on 2/9/14.
 //  Copyright (c) 2014 He Li. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface HelloWorldTests : XCTestCase
+@interface helloworldTests : XCTestCase
 
 @end
 
-@implementation HelloWorldTests
+@implementation helloworldTests
 
 - (void)setUp
 {

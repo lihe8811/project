@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HelloWorld.xcscheme</key>
+		<key>helloworld.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4889B2AF18A7FBA200909D1F</key>
+		<key>4899A51E18A7FD9C009ED1C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4889B2D018A7FBA300909D1F</key>
+		<key>4899A53918A7FD9C009ED1C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
