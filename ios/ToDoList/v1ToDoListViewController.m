@@ -1,30 +1,31 @@
 //
-//  helloworldContactsViewController.m
-//  helloworld
+//  v1ToDoListViewController.m
+//  ToDoList
 //
-//  Created by He Li on 2/10/14.
+//  Created by He Li on 2/11/14.
 //  Copyright (c) 2014 He Li. All rights reserved.
 //
 
-#import "helloworldContactsViewController.h"
-#import "helloworldShowcontact.h"
+#import "v1ToDoListViewController.h"
+#import "v1ToDoItem.h"
+#import "v1AddToDoItemViewController.h"
 
-@interface helloworldContactsViewController ()
+@interface v1ToDoListViewController ()
 
-@property NSMutableArray *Contacts;
+@property NSMutableArray *toDoItems;
 
 @end
 
-@implementation helloworldContactsViewController
+@implementation v1ToDoListViewController
 
-- (IBAction)unwindContacts:(UIStoryboardSegue *)segue
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
-    /*helloworldNewcontactViewController *source = [segue sourceViewController];
-    helloworldShowcontact *contact = source.myContact;
-    if (contact != nil) {
-        [self.Contacts addObject:contact];
+    v1AddToDoItemViewController *source = [segue sourceViewController];
+    v1ToDoItem *item = source.toDoItem;
+    if (item != nil) {
+        [self.toDoItems addObject:item];
         [self.tableView reloadData];
-    }*/
+    }
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -36,26 +37,26 @@
     return self;
 }
 
-/*- (void)loadInitialData
+- (void) loadInitialData
 {
-    helloworldShowcontact *contactOne = [[helloworldShowcontact alloc] init];
-    contactOne.contactName = @"He Li";
-    [self.Contacts addObject:contactOne];
+    v1ToDoItem *item1 = [[v1ToDoItem alloc] init];
+    item1.itemName = @"Develop App";
+    [self.toDoItems addObject:item1];
     
-    helloworldShowcontact *contactTwo = [[helloworldShowcontact alloc] init];
-    contactTwo.contactName = @"Le Yu";
-    [self.Contacts addObject:contactTwo];
+    v1ToDoItem *item2 = [[v1ToDoItem alloc] init];
+    item2.itemName = @"Product Management";
+    [self.toDoItems addObject:item2];
     
-    helloworldShowcontact *contactThree = [[helloworldShowcontact alloc] init];
-    contactThree.contactName = @"Bowen Liang";
-    [self.Contacts addObject:contactThree];
-}*/
+    v1ToDoItem *item3 = [[v1ToDoItem alloc] init];
+    item3.itemName = @"Documentation";
+    [self.toDoItems addObject:item3];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    /*self.Contacts = [[NSMutableArray alloc] init];
-    [self loadInitialData];*/
+    self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -75,26 +76,28 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    /*return 1;*/
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    /*return [self.Contacts count];*/
-    return 1;
+    return [self.toDoItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*static NSString *CellIdentifier = @"ListPrototypeCell";*/
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"ListPrototypeCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    /*helloworldShowcontact *contact = [self.Contacts objectAtIndex:indexPath.row];
-    cell.textLabel.text = contact.contactName;*/
+    v1ToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = toDoItem.itemName;
+    if (toDoItem.completed) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     return cell;
 }
 
@@ -148,5 +151,18 @@
 }
 
  */
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    v1ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    
+    tappedItem.completed = !tappedItem.completed;
+    
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}
 
 @end
