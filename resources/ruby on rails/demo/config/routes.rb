@@ -1,4 +1,8 @@
 Demo::Application.routes.draw do
+  resources :events
+  resources :people
+  root :to => "events#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
