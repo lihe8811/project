@@ -1,4 +1,7 @@
 Demo::Application.routes.draw do
+  resources :posts
+
+
   resources :events
   resources :people
   root :to => "events#index"

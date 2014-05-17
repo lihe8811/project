@@ -37,5 +37,5 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-# To use kaminari
-gem 'kaminari'
+# To use bootstrap
+gem 'twitter-bootstrap-rails'
