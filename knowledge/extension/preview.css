@@ -1,0 +1,50 @@
+body {
+	min-width: 250px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	color: #545454;
+	background-color: #f8f6f2;
+	background-image: url(background.png);
+}
+
+header {
+	height: 45px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #e1ddd8;
+	background-image: url(background-main.png);
+}
+
+#logo {
+	position: relative;
+	top: 10px;
+	width: 32px;
+	height: 32px;
+	margin: 0px auto;
+	background-image: url(icon.png);
+	background-size: 100%;
+}
+
+div.intro {
+	position: relative;
+	top: -30px;
+	margin: 0px auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #e1ddd8;
+	height:auto;
+	width: auto;
+	text-align: left;
+}
+
+#title {
+	margin-bottom: 5px;
+}
+
+footer {
+	padding: 10px 35px;
+	border-top: 1px solid #e1ddd8;
+	background-image: url(background-main.png);
+}
