@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "News",
+  "description": "This extension help you to read news without subscriptions.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://www.economist.com/*", "https://www.google.com/*"],
+      "js": ["news_reader.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "news.png"
+  },
+  "permissions": [
+    "tabs",
+    "https://*/"
+  ]
+}
