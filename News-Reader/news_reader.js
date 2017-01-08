@@ -16,7 +16,7 @@ if (window.location.hostname == ECONOMIST) {
 } else if (window.location.hostname == GOOGLE) {
   var referrer = document.referrer.replace(
       /http[s]*:/g, '').replace(/\/*/g, '');
-  if (referrer == DOMAIN) {
+  if (referrer == ECONOMIST) {
     var target = document.getElementsByClassName('r')[0].firstElementChild;
     var click = document.createEvent('MouseEvents');
     click.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0,
