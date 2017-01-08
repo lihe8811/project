@@ -1,9 +1,9 @@
-var DOMAIN = 'www.economist.com';
+var ECONOMIST = 'www.economist.com';
 var GOOGLE = 'www.google.com';
 var SEARCH = 'http://www.google.com/#safe=off&q=';
 var LOG_TAG = 'LOGGER:';
 
-if (window.location.hostname == DOMAIN) {
+if (window.location.hostname == ECONOMIST) {
   var articles = document.getElementsByTagName('article')
   for (i = 0; i < articles.length; i++) {
     var anchor = articles[i].getElementsByTagName('a')[0];
